@@ -7,8 +7,8 @@ We want to create a site where a user could enter an animal, perhaps from a drop
 At a high level, the steps we will need to follow to determine which zoos have which animals are:
 1. Scrape all possible AZA accredited zoos to determine which zoos are housed there.
 2. Convert results into some data type mapping one animal species -> list of zoos.
-2. Store the animal -> zoos relationship in a database.
-3. Call an endpoint to query the database for an entered animal.
+3. Store the animal -> zoos relationship in a database.
+4. Call an endpoint to query the database for an entered animal.
 
 ### Scraper details
 One challenge is that zoo websites are not particularly standardized, and there are many AZA accredited facilities in the US. This means that we will need to create so many custom scrapers to populate our db. Code for individual scrapers can be found in the /scrapers directory. For this project we have chosen ruby, mostly because we don't care for python and we also wanted a language with less boilerplate than java. It is possible that there's a better choice to be made here so we're open to translating these later if needed.
