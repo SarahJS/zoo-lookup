@@ -38,3 +38,5 @@ At the very least we wil need some GET endpoint like /<animal-species> that will
 7. Probably don't want a dropdown since there's like, hundreds of species and scrolling through that will be annoying. Maybe group animals by phylum, or alphabetically, or by native range or provide the option to filter by any of the above.
 8. Might be beneficial in the future to unify scraper design a bit, eg have a core scraper and each individual zoo's scraper would have specific rules.
 9. Draw out system design and include diagrams.
+10. Write and flesh out a section on how we'll know if things go wrong. We certainly don't need to be paged if a scraper fails or anything but it would be great if there's a way to send emails when a scraper has failed or resulted in error(s).
+11. Do we think we'll need metrics? Again, we anticipate very very few users but we probably want to keep track of traffic in case we need to scale things down the line. Might be useful to gather metrics like number of queries for each animal? Among others.
